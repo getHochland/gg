@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Karla";
+  src: url("fonts/Karla-Regular.ttf");
+}
+* {
+  margin: 0;
+  font-family: "Karla";
+}
+
+h1 {
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: start;
+}
+.header-content .logo-link {
+  width: 10%;
+}
+.header-content .logo-link .logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header-content nav {
+  width: 70%;
+  height: 100%;
+}
+.header-content ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+.header-content ul li {
+  list-style-type: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+.header-content ul a {
+  text-decoration: none;
+  color: rgb(29, 31, 46);
+}
+.header-content ul li:hover {
+  background: rgba(162, 95, 75, 0.3);
+  cursor: pointer;
+}
+.header-content .cart-btn-link {
+  width: 20%;
+  height: 30px;
+  text-decoration: none;
+}
+.header-content .cart-btn-link .cart-btn-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #050827;
+}
+
+.banner-content {
+  height: 55vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content .banner-content-image {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.banner-content .banner-content-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner-content .banner-content-main {
+  z-index: 10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content .banner-content-main h2 {
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.banner-content .banner-content-main h1 {
+  font-size: 50px;
+  padding-top: 10px;
+}
+.banner-content .banner-content-main span {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.banner-content .banner-content-main .banner-block-btn {
+  height: 25px;
+  width: 30%;
+  padding-top: 50px;
+}
+.banner-content .banner-content-main button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.banner-content .banner-block-btn {
+  z-index: 10;
+}
+
+.text-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 120px 0;
+}
+.text-content .text-title {
+  font-size: 28px;
+  color: rgb(29, 31, 46);
+  line-height: 50px;
+  width: 60%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.text-content .main-text {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  width: 50%;
+  color: rgba(29, 31, 46, 0.7);
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.text-content .text-btn button {
+  border: none;
+  border-bottom: rgba(162, 95, 75, 0.2) solid 2px;
+  background: none;
+  color: #A25F4B;
+  font-size: 20px;
+}
+
+.main-text.active {
+  height: 140px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  text-transform: uppercase;
+}
+.title span {
+  text-align: center;
+  position: relative;
+  padding: 0 50px;
+  font-size: 16px;
+}
+.title :before, .title :after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30px;
+  background: #d7d7d7;
+  position: absolute;
+}
+.title :before {
+  top: 50%;
+  right: calc(100% - 20px);
+}
+.title :after {
+  bottom: 50%;
+  left: calc(100% - 20px);
+}
+
+/*# sourceMappingURL=Style.css.map */
